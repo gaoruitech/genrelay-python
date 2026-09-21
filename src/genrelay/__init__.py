@@ -20,7 +20,7 @@ from .errors import (
 )
 from .types import TERMINAL_STATUSES, Video, VideoError, VideoStatus
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 from ._client import GenRelay, Videos  # noqa: E402  (needs __version__ above)
 
