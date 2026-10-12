@@ -1,6 +1,6 @@
 # genrelay-python
 
-Python client for [GenRelay](https://genrelay.ai) — one API for **Veo 3.1**, **Grok Imagine**, **Nano Banana Pro/2**, **GPT Image 2** and **Omni Flash**. Text-to-video, image-to-video, first/last-frame, and image generation.
+Python client for [GenRelay](https://genrelay.ai/?utm_source=github&utm_medium=readme&utm_campaign=genrelay-python) — one API for **Veo 3.1**, **Grok Imagine**, **Nano Banana Pro/2**, **GPT Image 2** and **Omni Flash**. Text-to-video, image-to-video, first/last-frame, and image generation.
 
 ```bash
 pip install genrelay
@@ -78,7 +78,7 @@ client.videos.generate(
 | `nano-banana-2` | image | Google |
 | `gpt-image-2` | image | OpenAI |
 
-Current list and per-model options: **https://genrelay.ai/models**
+Current model list, options and per-tier pricing: [GenRelay docs](https://genrelay.ai/docs?utm_source=github&utm_medium=readme&utm_campaign=genrelay-python) · [Pricing](https://genrelay.ai/pricing?utm_source=github&utm_medium=readme&utm_campaign=genrelay-python)
 
 ## Parameters
 
