@@ -133,6 +133,20 @@ client = GenRelay(api_key="sk-...", timeout=60.0, max_retries=2)
 `GenRelay` is a context manager and closes its HTTP client on exit. Pass your
 own `httpx.Client` via `http_client=` to control pooling or proxies.
 
+## FAQ
+
+**What is genrelay?** A Python client for the GenRelay generative media API: video and image generation with Veo 3.1, Grok Imagine, Nano Banana and GPT Image 2.
+
+**How do I get an API key?** Sign up at [genrelay.ai](https://genrelay.ai/?utm_source=github&utm_medium=readme&utm_campaign=genrelay-python) and create a key in the console. Set it as `GENRELAY_API_KEY`.
+
+**How is it billed?** Prepaid credits in USD, pay as you go. See [Pricing](https://genrelay.ai/pricing?utm_source=github&utm_medium=readme&utm_campaign=genrelay-python).
+
+**Do I need this package for chat or image edits?** No. Those are OpenAI-compatible, so the official `openai` package pointed at `https://genrelay.ai/v1` works. This package covers the asynchronous video and image jobs.
+
+**A job timed out. Do I resubmit?** No. `JobTimeout` carries the task id; poll it with `client.videos.wait(task_id)`. Resubmitting is billed again.
+
+**Is there an MCP server?** Yes: [genrelay-mcp](https://github.com/gaoruitech/genrelay-mcp).
+
 ## License
 
 MIT
