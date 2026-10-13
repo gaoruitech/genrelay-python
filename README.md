@@ -145,7 +145,7 @@ own `httpx.Client` via `http_client=` to control pooling or proxies.
 
 **A job timed out. Do I resubmit?** No. `JobTimeout` carries the task id; poll it with `client.videos.wait(task_id)`. Resubmitting is billed again.
 
-**Is there an MCP server?** Yes: [genrelay-mcp](https://github.com/gaoruitech/genrelay-mcp).
+**Is there a JavaScript SDK or an MCP server?** Yes: [genrelay-js](https://github.com/gaoruitech/genrelay-js) (`npm install genrelay`) and [genrelay-mcp](https://github.com/gaoruitech/genrelay-mcp).
 
 ## License
 
